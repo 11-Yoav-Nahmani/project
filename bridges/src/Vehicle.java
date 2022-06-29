@@ -1,13 +1,26 @@
-public class Vehicle {
+public abstract class Vehicle  {
 
-    private int wheels;
-    private int doors;
-    private String engine;
+    private Gear gear;
+    private int fuel;
 
-    public Vehicle(int wheels,int doors, String engine){
-        this.wheels = wheels;
-        this.doors = doors;
-        this.engine = engine;
+    public Vehicle(Gear gear, int fuel){
+        this.fuel=fuel;
+        this.gear = gear;
     }
 
+    public int getFuel() {
+        return fuel;
+    }
+
+    public void setFuel(int fuel) {
+        this.fuel = fuel;
+    }
+
+    public void setGear(Gear gear) {
+        this.gear = gear;
+    }
+
+    public void Horn(){
+        System.out.println("honk!!!!");
+    }
 }

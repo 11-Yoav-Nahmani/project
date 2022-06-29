@@ -1,3 +1,5 @@
-public class Gear {
+public interface Gear {
+
+    void gear();
 
 }

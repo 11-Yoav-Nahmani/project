@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class CommandExecutor {
+public interface CommandExecutor {
+    public void runCommand(String cmd) throws Exception;
 }

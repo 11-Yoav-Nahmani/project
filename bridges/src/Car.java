@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class Car {
+public class Car extends Vehicle {
+
+
+    public Car(Gear gear, int fuel) {
+        super(gear, fuel);
+    }
+
 }
